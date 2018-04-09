@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:appPropinas="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <item
+        android:id="@+id/configuracion"
+        android:orderInCategory="100"
+        android:title="Configuración"
+        android:icon="@android:drawable/ic_menu_preferences"
+
+        appPropinas:actionProviderClass="android.support.v7.widget.shareActionProvider"/>
+
+    <item
+        android:id="@+id/creditos"
+        android:orderInCategory="100"
+        android:title="Creditos"
+        android:icon="@android:drawable/ic_menu_preferences"
+
+        appPropinas:actionProviderClass="android.support.v7.widget.shareActionProvider"/>
+
+
+
+</menu>

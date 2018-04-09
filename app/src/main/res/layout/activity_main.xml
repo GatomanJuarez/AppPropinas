@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mx.edu.unipolidgo.apppropinas.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true">
+
+        <EditText
+            android:id="@+id/cantidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/cantidad_pagar"
+
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+
+            android:gravity="right"
+            android:layout_marginTop="100dp" />
+
+        <Button
+            android:id="@+id/calcular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cantidad"
+            android:layout_marginTop="5dp"
+
+            android:layout_centerHorizontal="true"
+            android:text="@string/calcular_propina" />
+
+        <TextView
+            android:id="@+id/porcentaje_propina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/calcular"
+
+            android:layout_alignLeft="@id/calcular"
+            android:text="@string/porcentaje_propina" />
+
+        <TextView
+            android:id="@+id/propina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/porcentaje_propina"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/propina" />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/propina"
+            android:layout_marginTop="20dp"
+            android:text="@string/cantidad_total"
+            android:textColor="@color/RED"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:id="@+id/menu"
+         />
+
+</android.support.constraint.ConstraintLayout>
